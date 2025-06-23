@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse-question {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #a78bfa);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px #a78bfa);
+  }
+}
+
+.animate-question {
+  animation: pulse-question 2s ease-in-out infinite;
+}
+

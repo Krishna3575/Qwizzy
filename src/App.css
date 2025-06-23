@@ -1,0 +1,17 @@
+@import "tailwindcss";
+body{
+  background-color: #1a1a1a;
+}
+
+        @keyframes bounce-slow {
+          0%, 100% {
+            transform: translateY(0) rotate(-5deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(5deg);
+          }
+        }
+        .animate-bounce-slow {
+          animation: bounce-slow 4s ease-in-out infinite;
+        }
+      
